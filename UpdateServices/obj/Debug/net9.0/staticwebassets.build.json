@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "oJIrUrAh0zF0aD8oJsKtwdgeEar4vO9L5KlSq9NwcwY=",
+  "Source": "UpdateServices",
+  "BasePath": "_content/UpdateServices",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
