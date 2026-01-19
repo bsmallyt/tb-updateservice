@@ -21,7 +21,7 @@ jobs:
       - name: Build and Publish Image
         uses: docker/build-push-action@v6
         with: 
-          context: ./UpdateServicesApi
-          file: ./UpdateServicesApi/Dockerfile
+          context: ./UpdateServices
+          file: ./UpdateServices/Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/tb-update:latest
