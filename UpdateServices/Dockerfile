@@ -31,7 +31,7 @@ EXPOSE 8081
 
 # install docker
 RUN apt-get update && \
-  apt-get install -y docker.io && \
+  apt-get install -y docker.io docker-compose-plugin && \
   rm -rf /var/lib/apt/lists/*
 
 # run the app
