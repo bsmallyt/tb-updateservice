@@ -17,7 +17,8 @@ namespace UpdateServices.Services
         RedirectStandardOutput = true,
         RedirectStandardError = true,
         UseShellExecute = false,
-        CreateNoWindow = true
+        CreateNoWindow = true,
+        WorkingDirectory = "/"
       };
 
       using var process = new Process { StartInfo = psi };
