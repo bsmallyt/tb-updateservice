@@ -30,7 +30,7 @@ ENV ASPNETCORE_URLS=http://+:8081
 EXPOSE 8081
 
 RUN apt-get update && \
-  apt-get install -y docker.io docker-compose-plugin && \
+  apt-get install -y docker-ce-cli docker-compose-plugin && \
   rm -rf /var/lib/apt/lists/*
 
 # run the app
