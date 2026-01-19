@@ -7,10 +7,10 @@ namespace UpdateServices.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class dockerController : ControllerBase
+public class DockerController : ControllerBase
 {
   private readonly RestartServiceController _restartService;
-  public dockerController(RestartServiceController restartService)
+  public DockerController(RestartServiceController restartService)
   {
     _restartService = restartService;
   }
