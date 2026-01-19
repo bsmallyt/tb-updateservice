@@ -29,5 +29,9 @@ COPY --from=build /app/publish .
 ENV ASPNETCORE_URLS=http://+:8081
 EXPOSE 8081
 
+RUN apt-get update && \
+  apt-get install -y docker.io docker-compose-plugin && \
+  rm -rf /var/lib/apt/lists/*
+
 # run the app
 ENTRYPOINT ["dotnet", "UpdateServices.dll"]
