@@ -1,12 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 using UpdateServices.Services;
-using System;
-using System.Threading.Tasks;
 
 namespace UpdateServices.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("docker")]
 public class DockerController : ControllerBase
 {
   private readonly RestartServiceController _restartService;
@@ -20,7 +18,7 @@ public class DockerController : ControllerBase
   {
     try
     {
-      var output = await _restartService.RestartServiceAysnc(service);
+      var output = await _restartService.RestartServiceAsync(service);
       return Ok(new { message = "Service restarted", output });
     }
     catch (Exception ex)

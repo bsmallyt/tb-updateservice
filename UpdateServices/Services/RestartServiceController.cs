@@ -8,7 +8,7 @@ namespace UpdateServices.Services
   {
     public RestartServiceController () {}
 
-    public async Task<string> RestartServiceAysnc(string service)
+    public async Task<string> RestartServiceAsync(string service)
     {
       var psi = new ProcessStartInfo
       {
