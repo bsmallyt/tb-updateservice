@@ -35,7 +35,7 @@ public class DockerController : ControllerBase
   {
     try
     {
-      var output = await _dockerService.StopService(service);
+      var output = "";// await _dockerService.StopService(service);
       return Ok(new { message = "Service stopped", output });
     }
     catch (Exception ex)
